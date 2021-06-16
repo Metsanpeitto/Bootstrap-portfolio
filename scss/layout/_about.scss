@@ -1,0 +1,331 @@
+/**
+* about.scss
+*
+* This is the About Layout were we want to call for an action
+* from the client.
+* If the design from the other layouts have work as expected, and
+* we were able to build up the confidence and convey succesfully the
+* ideas and emotions that we want to transmit, now the user or potential
+* employer would want to hire as to solve his problems.
+*
+* Keep the same design rules than before and remember to make this layout
+* as simple and clean as possible. So the user don't have any distraction
+* or interference that could cost us lose the oportunity.
+ Layout about  */
+
+.l-about {
+  display: grid;
+  grid-template-rows: 596px 500px;
+  grid-row-gap: 80px;
+  width: 375px;
+  background-color: white;
+  padding: unset;
+  margin: auto;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 64px;
+  transform: translateY(75px);
+
+  .social-text {
+    width: 150px;
+    margin-bottom: 20px;
+    color: #7f8cff;
+    position: relative;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .social-icons {
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    opacity: 1;
+    padding: 5px;
+    position: absolute;
+    top: 35px;
+    padding-left: unset;
+    overflow: hidden;
+
+    li {
+      margin-right: 21px;
+    }
+  }
+
+  .about-box {
+    display: flex;
+    height: 625px;
+    width: 375px;
+    padding: 24px 24px;
+    margin: auto;
+    top: 3506px;
+  }
+
+  .about-box-top {
+    float: left;
+
+    button {
+      top: 320px;
+      position: relative;
+    }
+
+    .top-title {
+      display: flex;
+      width: 50%;
+      height: 100px;
+      color: rgba(23, 43, 77, 1);
+      position: absolute;
+      top: 114px;
+      left: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      opacity: 1;
+      text-align: left;
+    }
+
+    .top-parraf {
+      width: 327px;
+      color: rgba(52, 69, 99, 1);
+      position: relative;
+      top: 234px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+
+    .social-media {
+      width: 200px;
+      height: 80px;
+      margin: 16px;
+      margin-left: unset;
+      opacity: 1;
+      position: absolute;
+      top: 415px;
+      left: unset;
+      overflow: hidden;
+
+      .supporting {
+        width: 117px;
+        height: 24px;
+        margin: 8px;
+        margin-left: unset;
+        opacity: 1;
+        position: absolute;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .about-experience {
+    display: grid;
+    width: 327px;
+    height: max-content;
+    grid-template-rows: 315px 72px 72px;
+    opacity: 1;
+    position: absolute;
+    top: 547px;
+    left: 24px;
+    overflow: hidden;
+    margin-top: 48px;
+  }
+
+  .experience-language {
+    width: 327px;
+    height: 72px;
+    position: relative;
+  }
+
+  .experience-group {
+    display: grid;
+    grid-template-columns: 90% 20px;
+    align-items: center;
+    width: 327px;
+    height: 72px;
+    position: relative;
+
+    .experience-text {
+      width: 237px;
+      color: black;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      opacity: 1;
+      text-align: left;
+    }
+
+    .languages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+      height: 248.14678955078125px;
+      width: 327px;
+      top: 72px;
+
+      .language-group {
+        display: flex;
+        background: #f7f7f9;
+        height: 66.7155990600586px;
+        width: 303px;
+        left: 12px;
+        top: 169.43115234375px;
+        border-radius: 8px;
+        margin-top: 12px;
+
+        .language-name {
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: left;
+          height: 24px;
+          align-self: center;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 327px;
+    height: 1px;
+    background: #dfe1e6;
+    opacity: 1;
+    position: absolute;
+    top: 71px;
+    overflow: hidden;
+  }
+
+  .arrow-vertical {
+    margin-top: 8px;
+    cursor: pointer;
+    float: right;
+    width: 14px;
+    height: 8px;
+    margin-right: 8px;
+  }
+
+  .arrow-horizontal {
+    cursor: pointer;
+    float: right;
+    width: 8px;
+    height: 14px;
+    margin-right: 8px;
+  }
+
+  .circle {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+    align-self: center;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+  /*  Desktop values  */
+
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+    height: 924px;
+    padding: 142px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    transform: translateY(142px);
+
+    .about-box {
+      width: 100%;
+      margin: unset;
+      grid-column-start: 1;
+
+      .about-box-top {
+        display: grid;
+        height: 392px;
+
+        .top-title {
+          width: 200px;
+          height: 114px;
+          position: relative;
+          top: unset;
+          left: unset;
+          margin: unset;
+        }
+
+        .top-parraf {
+          grid-row-start: 2;
+          top: unset;
+          max-width: 447px;
+          width: 100%;
+          margin-bottom: unset;
+        }
+
+        .social-media {
+          position: relative;
+          grid-row-start: 3;
+          top: unset;
+          left: unset;
+          width: 100%;
+          margin-top: unset;
+        }
+
+        .c-b-normal-button {
+          position: relative;
+          top: unset;
+        }
+      }
+    }
+
+    .about-experience {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      position: relative;
+      top: unset;
+      width: 684px;
+      height: 360px;
+      grid-template-rows: 210px 75px 75px;
+
+      .experience-language {
+        width: unset;
+        height: 210px;
+        grid-row-start: 1;
+      }
+
+      .experience-group {
+        width: unset;
+
+        .languages {
+          width: 366px;
+          height: 150px;
+          align-items: unset;
+          display: grid;
+          grid-template-columns: repeat(3, 122px);
+          grid-column-gap: 12px;
+          padding-left: unset;
+
+          .language-group {
+            position: unset;
+            width: 122px;
+            height: 120px;
+            display: grid;
+
+            .language-name {
+              transform: translateY(-10px);
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .line {
+      width: 684px;
+    }
+  }
+}

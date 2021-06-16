@@ -1,0 +1,174 @@
+/* -----------------------------------------------------------------------------------
+
+    Template Name: Portfolio
+    Description: This is a portfolio project. Built for Microverse.
+    Author: Abraham Rodriguez ( Abi )
+    Author URI: https://portfolio.waldenberginc.com
+
+-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+   Folder Architecture
+
+   1._style
+   |
+   |
+   |
+   |___1.1 abstract
+   |              |
+   |              |
+   |              |___1.1.1 variables
+   |
+   |
+   |___1.2 base
+   |           |
+   |           |
+   |           |___1.2.1 animations
+   |           |
+   |           |
+   |           |___1.2.2 images
+   |
+   |
+   |___1.3 components
+   |                 |
+   |                 |
+   |                 |___1.3.1 buttons
+   |
+   |
+   |___1.4 layout
+                 |
+                 |
+                 |___1.4.1 about
+                 |
+                 |
+                 |___1.4.2 contact
+                 |
+                 |
+                 |___1.4.3 header
+                 |
+                 |
+                 |___1.4.4 landing
+                 |
+                 |
+                 |___1.4.5 works
+*/
+
+/* ======================== 
+     Bootstrap Source
+   ======================== */
+// make font sizes responsive
+$enable-responsive-font-sizes: true;
+
+// import bootstrap initial sass vendors
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// remove colors from bs color var maps
+$grays: map-remove($grays, "100","200","300","400","500","600","700","800","900");
+$theme-colors: map-remove($theme-colors, "primary","secondary","success","danger","warning","info","light","dark");
+$colors: map-remove($colors, "blue","indigo","purple","pink","red","orange","yellow","green","teal","cyan","white","gray","gray-dark");
+
+// @debug $colors;
+
+// get my var overrides sass
+@import "./vars";
+
+// finish loading rest of bs sass lib with my var and color map changes applied
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+//@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+//@import "~bootstrap/scss/list-group";
+//@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+//@import "~bootstrap/scss/popover";
+//@import "~bootstrap/scss/carousel";
+//@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+//@import "~bootstrap/scss/print";
+
+@import "base/animations";
+@import "base/images";
+@import "abstract/variables";
+@import "components/buttons";
+@import "layout/about";
+@import "layout/contact";
+@import "layout/header";
+@import "layout/landing";
+@import "layout/works";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: unset;
+  display: contents;
+  list-style-type: none;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  overflow-y: hidden;
+  position: absolute;
+  -webkit-animation: rise 0.9s ease-in-out;
+  animation: rise 0.9s ease-in-out;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/*  Desktop values  */
+
+@media only screen and (min-width: 1024px) {
+  main {
+    background-color: #e5e5e5;
+  }
+}
+

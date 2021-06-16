@@ -1,0 +1,295 @@
+/*
+$white: #fff;
+$gray: #b3bac5;
+$gray-dark: #5e6c84;
+$gray-light: #c1c7d0;
+$blue-1: #172b4d;
+$blue-2: #344563;
+$blue-3: #c1c7d0;
+$blue-4: #6070ff;
+$blue-5: #386df2;
+$blue-6: #2230d2;
+$blue-7: #4053fc;
+$blue-8: #0c1db5;
+*/
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  padding-left: unset;
+}
+
+li {
+  margin-top: 24px;
+}
+
+.navbar {
+  background: #fff;
+}
+.nav-link,
+.navbar-brand {
+  color: #6070ff;
+  cursor: pointer;
+  font-weight: 700;
+}
+.nav-link {
+  color: #6070ff;
+  cursor: pointer;
+  font-weight: 400;
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/*   -- header style --    */
+
+.header {
+  height: 1050px !important;
+  background-image: url(../images/header-background.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: start;
+}
+
+.description h1 {
+  color: #091e42;
+  font-weight: 700;
+}
+
+.description p {
+  color: #091e42;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.connect {
+  color: #0c1db5;
+}
+
+.description button {
+  border: 1px solid #6ab446;
+  background: #6ab446;
+  border-radius: 0;
+  color: #fff;
+}
+
+.description button:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+.img-fluid {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  width: 1156px;
+  height: 496px;
+  background-color: white;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding: 24px;
+}
+
+.card-description {
+  width: 90%;
+}
+
+.card-description-1 {
+  text-align: left;
+}
+
+.card-description-2 {
+  color: #5e6c84;
+  text-align: center;
+}
+
+.card-body {
+  width: 50%;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.card-img-top {
+  width: 544px;
+  height: 448px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+}
+
+.circles {
+  margin-left: unset;
+}
+
+.card-text {
+  margin-top: 32px;
+}
+
+.badges {
+  margin-top: 32px;
+}
+
+.badge {
+  width: 90px;
+  height: 25px;
+  font-weight: 300;
+  position: relative;
+  padding-top: 6px;
+  color: #6070ff;
+  background-color: #ebebfa !important;
+}
+
+.card-btn {
+  margin-top: 32px;
+  width: 124px;
+  height: 50px;
+  background-color: transparent;
+  color: #6070ff;
+  padding-top: 14px;
+}
+
+.about {
+  width: 100%;
+  height: 924px;
+  background-color: white;
+  border-top-right-radius: 50px 50px;
+  margin-top: 145px;
+  margin-bottom: -145px;
+  padding: 142px;
+}
+
+.about-card {
+  width: 122px;
+  height: 120px;
+  background-color: #f7f7f9;
+  border: unset;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-right: 12px;
+  padding: 12px;
+}
+
+.about-text {
+  margin-top: 12px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.about-col {
+  width: 50%;
+  margin-right: 15px;
+}
+
+.about-btn {
+  width: 165px;
+}
+
+.about-circle {
+  width: 48px;
+  height: 48px;
+}
+
+.about-language-text {
+  width: 90px;
+  margin-top: 16px;
+}
+
+.about-li {
+  border-bottom: 1px solid #f1ebeb;
+}
+
+.contact {
+  width: 100%;
+  height: 849px;
+  background-color: #6070ff;
+  position: relative;
+  display: grid;
+  grid-template-rows: 50px 160px auto;
+  padding-top: 142px;
+  justify-items: center;
+  border-top-left-radius: 100px 100px;
+}
+
+.contact-title {
+  color: white;
+  width: 50%;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact-text {
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.contact-form {
+  width: max-content;
+  position: relative;
+  display: grid;
+  height: 80%;
+}
+
+.contact-text-area {
+  height: 190px !important;
+}
+
+.contact-btn {
+  margin-top: 24px;
+  position: relative;
+  justify-self: center !important;
+  background-color: white;
+  color: #6070ff;
+}
